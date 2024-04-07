@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.11.0",
+    "axios": "^1.6.7",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "layer8_middleware": "^0.0.17",
+    "morgan": "~1.9.1",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "process": "^0.11.10"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.2",
+    "nodemon": "^3.1.0",
+    "prisma": "^5.11.0"
+  }
+}

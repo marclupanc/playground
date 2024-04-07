@@ -1,0 +1,30 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Anthogram {
+  id        Int       @id @default(autoincrement())
+  chartType ChartType
+  name      String?
+  xAxe      String[]
+  yAxe      String[]
+  userId    Int
+  postId    Int
+}
+
+enum ChartType {
+  barChart
+  lineChart
+  pieChart
+}
+
+model User {
+  id        String   @id
+  location  String
+  visitTime DateTime
+}
